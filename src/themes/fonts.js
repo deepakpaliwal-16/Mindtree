@@ -1,5 +1,5 @@
 export const Fonts = {
-  MuseoSansRounded100: 'MuseoSansRounded100',
+  MuseoSansRounded100: 'Museo Sans Rounded 100',
   MuseoSansRounded300: 'MuseoSansRounded300',
   MuseoSansRounded500: 'MuseoSansRounded500',
   MuseoSansRounded700: 'MuseoSansRounded700',

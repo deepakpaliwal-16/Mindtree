@@ -161,7 +161,6 @@
 				712EE02755569FD20338925B /* Pods-mindtree-tvOSTests.debug.xcconfig */,
 				9DB12821FF6B0CCDD06A804C /* Pods-mindtree-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

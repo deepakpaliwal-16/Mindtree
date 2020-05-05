@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
-import Images from './src/themes/images'
-import styles from './src/IntroScreen/style'
-// import React from 'react';
+import Images from '../themes/images'
+import styles from './style'
+import ButtonComponent from '../Component/button'
 import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
   View,
   Text,
-  StatusBar,
   TouchableOpacity,
   Image,
 } from 'react-native';
@@ -29,9 +25,8 @@ const slides = [
     key: 3,
     title: 'Save The Planet',
     text: 'For each week you practice meditation,\nMindtree plants a real tree through our\nreforestation program.',
-    // image: require('./assets/3.jpg'),
     image: Images.intro3,
-    backgroundColor: '#22bcb5',
+
   }
 ];
 export default class App extends Component {
@@ -45,22 +40,29 @@ export default class App extends Component {
         style={styles.containerIntro2}
       >
         <Image source={item.image} resizeMode={'contain'} style={styles.introImage2} />
-          <Text style={styles.introText2}>{item.title}</Text>
-          <Text style={styles.introText21}>{item.text}</Text>
+        <Text style={styles.introText2}>{item.title}</Text>
+        <Text style={styles.introText21}>{item.text}</Text>
       </View> : <View
         style={styles.containerIntro3}>
-            <Image source={item.image} resizeMode={'contain'} style={styles.introImage1} />
+            <Image source={item.image} resizeMode={'contain'} style={styles.introImage3} />
             <Text style={styles.introText2}>{item.title}</Text>
             <Text style={styles.introText21}>{item.text}</Text>
-            <View style={styles.introButton3View}>
-              <TouchableOpacity style={styles.introButton3}
-                activeOpacity={0.9}
-                onPress={this._onPressButton}
+            <ButtonComponent
+              title='Get Started'
+              style1={styles.introButton3View}
+              style={styles.introButton3}
+              textStyles={styles.introButton3Text}
+              onPress={() => this.props.navigation.navigate('second')}
+            />
+            <View style={styles.intro3Horizontal}>
+              <Text style={styles.intro32HorizontalText}>Already have an account?</Text>
+              <TouchableOpacity 
+              onPress={() => this.props.navigation.navigate('third')}
               >
-                <Text style={{ textAlign: 'center', fontSize: 20, color: 'rgb(255,255,255)', alignSelf: 'center', fontWeight: "700" }}> Get Started</Text>
+                <Text style={styles.intro31HorizontalText}> Sign In</Text>
               </TouchableOpacity>
             </View>
-
+            
           </View>
 
     );
