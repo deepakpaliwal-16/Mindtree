@@ -4,7 +4,7 @@ import App from './src/IntroScreen/App';
 import SignUp from './src/SignUp/signUp';
 import Login from './src/Login/login';
 import MemberShip from './src/MembershipScreen/membership';
-
+import BottomNav from './src/BottomNavigation/bottomNav'
 const screens = createStackNavigator({
   first: {
     screen: App,
@@ -26,6 +26,12 @@ const screens = createStackNavigator({
   },
   fourth: {
     screen: MemberShip,
+    navigationOptions: {
+      header: null,
+    }
+  },
+  fifth: {
+    screen: BottomNav,
     navigationOptions: {
       header: null,
     }

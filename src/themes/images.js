@@ -8,5 +8,18 @@ const Images = {
   memberShipPlant: require('../assets/images/memberShipPlant.png'),
   rightSign: require('../assets/images/rightSign.png'),
   bestDeal: require('../assets/images/bestDeal.png'),
+  homeActive: require('../assets/images/homActive.png'),
+  homeInActive: require('../assets/images/homeInActive.png'),
+  mediActive: require('../assets/images/mediActive.png'),
+  mediInActive: require('../assets/images/mediInActive.png'),
+  accountActive: require('../assets/images/accountActive.png'),
+  accountInActive: require('../assets/images/accountInActive.png'),
+  homeCloud: require('../assets/images/homeCloud.png'),
+  homeInviteTree: require('../assets/images/homeInviteTree.png'),
+  homegirl: require('../assets/images/homegirl.png'),
+  homeGreenPlay: require('../assets/images/homeGreenPlay.png'),
+  homeModalCloud: require('../assets/images/homeModalCloud.png'),
+  homeModaltree: require('../assets/images/homeModaltree.png'),
+  homeWhitePlay: require('../assets/images/homeWhitePlay.png'),
 }
 export default Images

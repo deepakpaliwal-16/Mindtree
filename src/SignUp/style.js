@@ -122,4 +122,8 @@ export default StyleSheet.create({
     fontWeight: "700",
     marginTop: metrics.screenHeight * 0.0149,
   },
+  bottomImageNav:{
+    width: metrics.screenWidth * 0.0533,//20
+    height: metrics.screenWidth * 0.0533,//20
+  }
 });
