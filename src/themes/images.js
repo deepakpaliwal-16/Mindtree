@@ -21,5 +21,11 @@ const Images = {
   homeModalCloud: require('../assets/images/homeModalCloud.png'),
   homeModaltree: require('../assets/images/homeModaltree.png'),
   homeWhitePlay: require('../assets/images/homeWhitePlay.png'),
+  mediStreesFree: require('../assets/images/mediStreesFree.png'),
+  UnlockCloud: require('../assets/images/UnlockCloud.png'),
+  accountTree: require('../assets/images/accountTree.png'),
+  accountoval: require('../assets/images/accountoval.png'),
+  accountOvaltree: require('../assets/images/accountOvaltree.png'),
+  forest: require('../assets/images/forest.png'),
 }
 export default Images

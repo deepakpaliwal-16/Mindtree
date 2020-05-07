@@ -7,6 +7,7 @@ import {
   TouchableWithoutFeedback,
   Keyboard,
   ScrollView,
+  StatusBar,
 } from 'react-native';
 import styles from './style'
 import Images from '../themes/images'
@@ -15,6 +16,9 @@ export default class HomeScreen extends Component {
   _renderModal = () => {
     return (
       <View style={styles.HomefirstModalView}>
+        <StatusBar
+          backgroundColor="blue"
+          barStyle="dark-content" />
         <ImageBackground source={Images.homegirl} style={styles.ImageGirlBackgroundView}
           imageStyle={{ borderRadius: 12 }}
         >

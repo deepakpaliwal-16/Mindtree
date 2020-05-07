@@ -2,17 +2,15 @@ import { createStackNavigator } from 'react-navigation-stack';
 import { createAppContainer } from 'react-navigation';
 import AccountScreen from './account'
 const AccountStack = createStackNavigator({
-  Account: { screen: AccountScreen },
+  Account: { screen: AccountScreen ,
+    navigationOptions: {
+      header: null,
+    }
+  },
 },
   {
     defaultNavigationOptions: {
-      //Header customization of the perticular Screen
-      headerStyle: {
-        backgroundColor: '#42f44b',
-      },
-      headerTintColor: '#FFFFFF',
       title: 'Account',
-      //Header title
     },
   }
 )
