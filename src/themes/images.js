@@ -27,5 +27,16 @@ const Images = {
   accountoval: require('../assets/images/accountoval.png'),
   accountOvaltree: require('../assets/images/accountOvaltree.png'),
   forest: require('../assets/images/forest.png'),
+  timeWatch: require('../assets/images/timeWatch.png'),
+  whiteClose: require('../assets/images/whiteClose.png'),
+  musicheadphone: require('../assets/images/musicheadphone.png'),
+  heartLike: require('../assets/images/heartLike.png'),
+  smallPlay: require('../assets/images/smallPlay.png'),
+  rightCheck: require('../assets/images/rightCheck.png'),
+  blackPlay: require('../assets/images/blackPlay.png'),
+  playCloud: require('../assets/images/playCloud.png'),
+  play: require('../assets/images/play.png'),
+  stop: require('../assets/images/stop.png'),
+  pause: require('../assets/images/pause.png'),
 }
 export default Images

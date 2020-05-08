@@ -6,6 +6,7 @@ import {
   ImageBackground,
   TouchableWithoutFeedback,
   Keyboard,
+  TouchableOpacity,
   ScrollView,
   StatusBar,
 } from 'react-native';
@@ -22,6 +23,9 @@ export default class HomeScreen extends Component {
         <ImageBackground source={Images.homegirl} style={styles.ImageGirlBackgroundView}
           imageStyle={{ borderRadius: 12 }}
         >
+          <TouchableOpacity
+            onPress={() => this.props.navigation.navigate('detailCourse')}
+          >
         <View style={styles.FirstModalView}>
         <View>
               <Text style={styles.FirstModalDayText}>Day 1 of 7</Text>
@@ -29,6 +33,7 @@ export default class HomeScreen extends Component {
         </View>
             <Image source={Images.homeGreenPlay} resizeMode={'contain'} style={styles.firstModalImage} />
         </View>
+          </TouchableOpacity>
         </ImageBackground>
         </View>
     );

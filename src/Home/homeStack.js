@@ -1,8 +1,22 @@
 import { createStackNavigator } from 'react-navigation-stack';
 import { createAppContainer } from 'react-navigation';
 import HomeScreen from './home'
+import CourseDetail from '../CourseDetail/courseDetail'
+import Music from '../MusicScreen/music'
 const HomeStack = createStackNavigator({
   Home: { screen: HomeScreen,
+    navigationOptions: {
+      header: null,
+    }
+  },
+  detailCourse: {
+    screen: CourseDetail,
+    navigationOptions: {
+      header: null,
+    }
+  },
+  musicCourse: {
+    screen: Music,
     navigationOptions: {
       header: null,
     }

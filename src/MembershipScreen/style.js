@@ -1,9 +1,10 @@
 import metrics from '../themes/metrics'
 import { StyleSheet, Dimensions, } from 'react-native'
+import colors from '../themes/colors'
 export default StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'rgb(41, 48, 74)',
+    backgroundColor: colors.blueBgTheme,
     paddingHorizontal: metrics.screenWidth * 0.0533,
   },
   closeButton:{
@@ -16,7 +17,7 @@ export default StyleSheet.create({
     textAlign:'center',
     fontSize:40,
     letterSpacing:0.48,
-    color:'rgb(255,255,255)',
+    color:colors.white,
     fontWeight:"900",
     alignSelf: 'center',
     marginTop: -metrics.screenHeight * 0.025,
@@ -25,7 +26,7 @@ export default StyleSheet.create({
     textAlign: 'center',
     fontSize: 15,
     letterSpacing: 0.3,
-    color: 'rgb(255,255,255)',
+    color: colors.white,
     fontWeight: "900",
     alignSelf: 'center',
     marginTop: metrics.screenHeight * 0.0074,
@@ -50,7 +51,7 @@ export default StyleSheet.create({
     textAlign: 'center',
     fontSize: 15,
     letterSpacing: 0.3,
-    color: 'rgb(255,255,255)',
+    color: colors.white,
     fontWeight: "500",
     alignSelf: 'center',
     marginLeft: metrics.screenWidth * 0.0346,
@@ -63,30 +64,30 @@ export default StyleSheet.create({
   paymentView:{
     width: metrics.screenWidth * 0.4266,
     height: metrics.screenHeight * 0.2143,
-    backgroundColor:'rgb(255,255,255)',
-    color:'rgb(255,255,255)',
+    backgroundColor:colors.white,
+    color:colors.white,
     borderRadius:12.0
   },
   monthlyPaymentClickView: {
     width: metrics.screenWidth * 0.4266,
     height: metrics.screenHeight * 0.2143,
-    backgroundColor: 'rgb(60,66,112)',
-    color: 'rgb(60,66,112)',
+    backgroundColor: colors.lightBlueWithOutOp,
+    color: colors.lightBlueWithOutOp,
     borderRadius: 12.0
   },
   paymentAnnualView: {
     width: metrics.screenWidth * 0.4266,
     height: metrics.screenHeight * 0.2143,
-    backgroundColor: 'rgb(255,255,255)',
-    color: 'rgb(255,255,255)',
+    backgroundColor: colors.white,
+    color: colors.white,
     borderRadius: 12.0,
     marginLeft: metrics.screenWidth * 0.04,
   },
   paymentAnnualClickView: {
     width: metrics.screenWidth * 0.4266,
     height: metrics.screenHeight * 0.2143,
-    backgroundColor: 'rgb(60,66,112)',
-    color: 'rgb(60,66,112)',
+    backgroundColor: colors.lightBlueWithOutOp,
+    color: colors.lightBlueWithOutOp,
     borderRadius: 12.0,
     marginLeft: metrics.screenWidth * 0.04,
   },
@@ -94,7 +95,7 @@ export default StyleSheet.create({
     textAlign:'center',
     fontSize: 15,
     letterSpacing: 0.3,
-    color: 'rgb(32,36,47)',
+    color: colors.darkBlue,
     fontWeight: "700",
     alignSelf: 'center',
     marginTop: metrics.screenHeight * 0.0224,//15
@@ -103,7 +104,7 @@ export default StyleSheet.create({
     textAlign: 'center',
     fontSize: 15,
     letterSpacing: 0.3,
-    color: 'rgb(255,255,255)',
+    color: colors.white,
     fontWeight: "700",
     alignSelf: 'center',
     marginTop: metrics.screenHeight * 0.0224,//15
@@ -112,7 +113,7 @@ export default StyleSheet.create({
     textAlign: 'center',
     fontSize: 15,
     letterSpacing: 0.3,
-    color: 'rgb(32,36,47)',
+    color: colors.darkBlue,
     fontWeight: "700",
     alignSelf: 'center',
     marginTop: - metrics.screenHeight * 0.0374,//25
@@ -121,7 +122,7 @@ export default StyleSheet.create({
     textAlign: 'center',
     fontSize: 15,
     letterSpacing: 0.3,
-    color: 'rgb(255,255,255)',
+    color: colors.white,
     fontWeight: "700",
     alignSelf: 'center',
     marginTop: - metrics.screenHeight * 0.0374,//25
@@ -129,7 +130,7 @@ export default StyleSheet.create({
   paymentDollarText: {
     fontSize: 15,
     letterSpacing: 0.0,
-    color: 'rgb(32,36,47)',
+    color: colors.darkBlue,
     fontWeight: "700",
     alignSelf: 'center',
     marginRight: metrics.screenHeight * 0.091,
@@ -138,7 +139,7 @@ export default StyleSheet.create({
   paymentDollarTextClick: {
     fontSize: 15,
     letterSpacing: 0.0,
-    color: 'rgb(255,255,255)',
+    color: colors.white,
     fontWeight: "700",
     alignSelf: 'center',
     marginRight: metrics.screenHeight * 0.091,
@@ -148,7 +149,7 @@ export default StyleSheet.create({
     textAlign: 'center',
     fontSize: 29,
     letterSpacing: 0.0,
-    color: 'rgb(32,36,47)',
+    color: colors.darkBlue,
     fontWeight: "700",
     alignSelf: 'center',
     marginTop: - metrics.screenHeight * 0.0199,
@@ -157,7 +158,7 @@ export default StyleSheet.create({
     textAlign: 'center',
     fontSize: 29,
     letterSpacing: 0.0,
-    color: 'rgb(255,255,255)',
+    color: colors.white,
     fontWeight: "700",
     alignSelf: 'center',
     marginTop: - metrics.screenHeight * 0.0199,
@@ -166,7 +167,7 @@ export default StyleSheet.create({
     textAlign: 'center',
     fontSize: 15,
     letterSpacing: 0.0,
-    color: 'rgb(116,125,149)',
+    color: colors.grey03,
     fontWeight: "500",
     alignSelf: 'center',
     marginTop: metrics.screenHeight * 0.0149,//10
@@ -175,7 +176,7 @@ export default StyleSheet.create({
     textAlign: 'center',
     fontSize: 15,
     letterSpacing: 0.0,
-    color: 'rgb(255,255,255)',
+    color: colors.white,
     fontWeight: "500",
     alignSelf: 'center',
     marginTop: metrics.screenHeight * 0.0149,//10
@@ -184,7 +185,7 @@ export default StyleSheet.create({
     textAlign: 'center',
     fontSize: 15,
     letterSpacing: 0.26,
-    color: 'rgb(116,125,149)',
+    color: colors.grey03,
     fontWeight: "500",
     alignSelf: 'center',
     marginTop: metrics.screenHeight * 0.0179,//12
@@ -193,7 +194,7 @@ export default StyleSheet.create({
     textAlign: 'center',
     fontSize: 15,
     letterSpacing: 0.26,
-    color: 'rgb(255,255,255)',
+    color: colors.white,
     fontWeight: "500",
     alignSelf: 'center',
     marginTop: metrics.screenHeight * 0.0179,//12
@@ -204,7 +205,7 @@ export default StyleSheet.create({
     alignSelf: 'flex-end',
   },
   signUpButtonView: {
-    backgroundColor: 'rgb(125,198,129)',
+    backgroundColor: colors.greenbtnTheme,
     width: metrics.screenWidth * 0.893,
     height: metrics.screenHeight * 0.082,
     alignSelf: 'center',
@@ -221,7 +222,7 @@ export default StyleSheet.create({
   fbButtonText: {
     textAlign: 'center',
     fontSize: 15,
-    color: 'rgb(255,255,255)',
+    color: colors.white,
     opacity: 0.96,
     alignSelf: 'center',
     letterSpacing: 0.3,

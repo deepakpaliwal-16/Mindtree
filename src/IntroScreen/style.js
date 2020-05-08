@@ -1,21 +1,22 @@
 import metrics from '../themes/metrics'
 import { StyleSheet, Dimensions, } from 'react-native'
 import { Fonts } from '../themes/fonts'
+import colors from '../themes/colors'
 var { height, width } = Dimensions.get('window');
 
 
 export default StyleSheet.create({
   containerIntro1: {
     flex: 1,
-    backgroundColor: 'rgb(125, 198, 129)'
+    backgroundColor: colors.greenbtnTheme
   },
   containerIntro2: {
     flex: 1,
-    backgroundColor: 'rgb(248, 251, 255)'
+    backgroundColor: colors.whitelight
   },
   containerIntro3: {
     flex: 1,
-    backgroundColor: 'rgb(248, 251, 255)'
+    backgroundColor: colors.whitelight
   },
   introImage1: {
     width: metrics.screenWidth / 1.488,
@@ -43,19 +44,18 @@ export default StyleSheet.create({
     marginTop: metrics.screenHeight * 0.0599,
     letterSpacing:0.3,
     lineHeight: 35,
-    // fontFamily: Fonts.MuseoSansRounded100
   },
   introText21: {
     alignSelf: 'center',
     fontSize: 15,
     fontWeight: '500',
-    color: 'rgb(41, 43, 69)',
+    color: colors.lightBlue,
     textAlign: 'center',
     lineHeight:25,
     marginTop: metrics.screenHeight * 0.0149,
   },
   introButton3View: {
-    backgroundColor: 'rgb(125,198,129)',
+    backgroundColor: colors.greenbtnTheme,
     width: metrics.screenWidth * 0.84,
     height: metrics.screenHeight * 0.082,
     alignSelf: 'center',
@@ -72,7 +72,7 @@ export default StyleSheet.create({
   introButton3Text: {
     textAlign: 'center', 
     fontSize: 20, 
-    color: 'rgb(255,255,255)', 
+    color: colors.white, 
     alignSelf: 'center', 
     fontWeight: "700"
   },
@@ -85,7 +85,7 @@ export default StyleSheet.create({
   intro31HorizontalText: {
     textAlign: 'center', 
     fontSize: 15, 
-    color: 'rgb(125,198,129)', 
+    color: colors.greenbtnTheme, 
     alignSelf: 'center', 
     fontWeight: "700", 
     marginTop: metrics.screenHeight * 0.0149,
@@ -93,7 +93,7 @@ export default StyleSheet.create({
   intro32HorizontalText: {
     textAlign: 'center',
     fontSize: 15,
-    color: 'rgb(153,162,178)',
+    color: colors.grey02,
     alignSelf: 'center',
     fontWeight: "700",
     marginTop: metrics.screenHeight * 0.0149,

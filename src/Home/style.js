@@ -1,14 +1,15 @@
 import metrics from '../themes/metrics'
 import { StyleSheet, Dimensions, } from 'react-native'
+import colors from '../themes/colors'
 export default StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'rgb(125, 198, 129)'
+    backgroundColor: colors.greenbtnTheme
   },
   containerView: {
     width: metrics.screenWidth,
     height: metrics.screenHeight * 0.1799,
-    backgroundColor: 'rgb(125, 198, 129)',
+    backgroundColor: colors.greenbtnTheme,
     marginTop: metrics.screenHeight * 0.074,
   },
   ImageBackgroundView: {
@@ -26,7 +27,7 @@ export default StyleSheet.create({
   alignSelf:'center',
   fontSize:17,
   letterSpacing:0.2,
-  color:'rgb(230,230,233)',
+  color:colors.grey01,
   fontWeight:'900',
   marginTop: - metrics.screenHeight * 0.025,//16.67
   },
@@ -35,15 +36,14 @@ export default StyleSheet.create({
     alignSelf: 'center',
     fontSize: 27,
     letterSpacing: 0.32,
-    color: 'rgb(255,255,255)',
+    color: colors.white,
     fontWeight: '900'
   },
   containerModalView:{
     width: metrics.screenWidth,
-    // height: metrics.screenHeight * 0.7931,
     height: metrics.screenHeight * 0.674,
-    color:'rgb(255,255,255)',
-    backgroundColor:'rgb(255,255,255)',
+    color:colors.white,
+    backgroundColor:colors.white,
     borderTopLeftRadius:40,
     borderTopRightRadius:40,
     paddingHorizontal: metrics.screenWidth*0.05333,
@@ -53,7 +53,7 @@ export default StyleSheet.create({
     fontSize: 21,
     letterSpacing: 0.25,
     lineHeight:28.5,
-    color: 'rgb(41,48,74)',
+    color: colors.blueBgTheme,
     fontWeight: '900',
     marginLeft: metrics.screenWidth * 0.0266,//10
     marginTop: metrics.screenHeight * 0.044,//30
@@ -78,14 +78,14 @@ export default StyleSheet.create({
     alignSelf: 'flex-start',
     fontSize: 13,
     letterSpacing: 0.16,
-    color: 'rgb(255,255,255)',
+    color: colors.white,
     fontWeight: '700',
   },
   FirstModalDetailText: {
     alignSelf: 'flex-start',
     fontSize: 17,
     letterSpacing: 0.2,
-    color: 'rgb(255,255,255)',
+    color: colors.white,
     fontWeight: '900',
     marginTop: metrics.screenHeight * 0.0074,//5
   },
@@ -110,7 +110,7 @@ export default StyleSheet.create({
     alignSelf: 'flex-start',
     fontSize: 13,
     letterSpacing: 0.16,
-    color: 'rgb(41,48,74)',
+    color: colors.blueBgTheme,
     fontWeight: '700',
   },
   secondModalImage: {
@@ -123,13 +123,11 @@ export default StyleSheet.create({
     height: metrics.screenHeight * 0.1499,//100
     paddingHorizontal: metrics.screenWidth * 0.0666,//25
     borderRadius:12,
-    backgroundColor:'rgb(41,48,74)',
+    backgroundColor:colors.blueBgTheme,
     marginTop: metrics.screenHeight * 0.0299,//20
     marginBottom: metrics.screenHeight * 0.0299,//20
   },
   ThirdModalView: {
-    // width: metrics.screenWidth * 0.8933,//335
-    // height: metrics.screenHeight * 0.1499,//100
     marginTop: metrics.screenHeight * 0.0299,//20
     flexDirection: 'row'
   },
@@ -137,7 +135,7 @@ ThirModalGrowthText: {
     alignSelf: 'flex-start',
     fontSize: 13,
     letterSpacing: 0.16,
-    color: 'rgb(125,198,129)',
+  color: colors.greenbtnTheme,
     fontWeight: '700',
   },
   ThirdModalImage: {

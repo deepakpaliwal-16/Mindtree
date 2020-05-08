@@ -1,14 +1,15 @@
 import metrics from '../themes/metrics'
 import { StyleSheet, Dimensions, } from 'react-native'
+import colors from '../themes/colors'
 export default StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'rgb(41, 48, 74)'
+    backgroundColor: colors.blueBgTheme,
   },
   containerView: {
     width: metrics.screenWidth,
     height: metrics.screenHeight * 0.1799,
-    backgroundColor: 'rgb(41, 48, 74)',
+    backgroundColor: colors.blueBgTheme,
     marginTop: metrics.screenHeight * 0.074,
   },
   ImageBackgroundView: {
@@ -26,7 +27,7 @@ export default StyleSheet.create({
     alignSelf: 'center',
     fontSize: 17,
     letterSpacing: 0.2,
-    color: 'rgb(202,204,210)',
+    color: colors.whitishgrey,
     fontWeight: '900',
     marginTop: - metrics.screenHeight * 0.025,//16.67
   },
@@ -35,15 +36,15 @@ export default StyleSheet.create({
     alignSelf: 'center',
     fontSize: 27,
     letterSpacing: 0.32,
-    color: 'rgb(255,255,255)',
+    color: colors.white,
     fontWeight: '900',
     marginTop:  metrics.screenHeight * 0.0074,//5
   },
   containerModalView: {
     width: metrics.screenWidth,
     height: metrics.screenHeight * 0.659,
-    color: 'rgb(255,255,255)',
-    backgroundColor: 'rgb(255,255,255)',
+    color: colors.white,
+    backgroundColor: colors.white,
     borderTopLeftRadius: 40,
     borderTopRightRadius: 40,
     paddingHorizontal: metrics.screenWidth * 0.05333,
@@ -51,7 +52,7 @@ export default StyleSheet.create({
   DayStreak:{
     width: metrics.screenWidth*.893,//335
     height: metrics.screenHeight * 0.1349,//90
-    backgroundColor: 'rgb(41,48,74)',
+    backgroundColor: colors.blueBgTheme,
     borderRadius:10,
     flexDirection:'row',
     marginTop: metrics.screenHeight * 0.0524,//35
@@ -68,15 +69,14 @@ export default StyleSheet.create({
     alignSelf: 'center',
     fontSize: 25,
     letterSpacing: 0.3,
-    color: 'rgb(255,255,255)',
+    color: colors.white,
     fontWeight: '900',
-    // marginTop: metrics.screenHeight * 0.0074,//5
   },
   DayStreakText2: {
     textAlign: 'center',
     alignSelf: 'center',
     fontSize: 15,
-    color: 'rgb(255,255,255)',
+    color: colors.white,
     fontWeight: '500',
     marginTop: metrics.screenHeight * 0.0074,//5
   },
@@ -85,9 +85,7 @@ export default StyleSheet.create({
     height: metrics.screenHeight * 0.2293,//153
     borderRadius:10,
     padding: metrics.screenWidth * .066,//25
-    // backfaceVisibility:'visible',
-    backgroundColor:'rgb(255,255,255)',
-    // opacity:0.96,
+    backgroundColor:colors.white,
     shadowOpacity:0.1,
     marginTop: metrics.screenHeight * 0.0299,//20
   },
@@ -96,7 +94,7 @@ export default StyleSheet.create({
     alignSelf: 'center',
     fontSize: 20,
     letterSpacing: 0.24,
-    color: 'rgb(41,48,74)',
+    color: colors.blueBgTheme,
     fontWeight: '900',
     marginBottom: metrics.screenHeight * 0.0374,//5
   },
@@ -117,7 +115,7 @@ export default StyleSheet.create({
     textAlign: 'center',
     alignSelf: 'center',
     fontSize: 15,
-    color: 'rgb(41,48,74)',
+    color: colors.blueBgTheme,
     fontWeight: '500',
     marginTop: metrics.screenHeight * 0.0149,//10
   },
@@ -125,7 +123,7 @@ export default StyleSheet.create({
     width: metrics.screenWidth * .893,//335
     height: metrics.screenHeight * 0.1124,//75
     borderRadius: 12,
-    backgroundColor: 'rgb(125,198,129)',
+    backgroundColor: colors.greenbtnTheme,
     marginTop: metrics.screenHeight * 0.0299,//20
     alignContent:'center',
     alignItems:'center',
@@ -137,7 +135,7 @@ export default StyleSheet.create({
     fontSize: 19,
     lineHeight:20,
     letterSpacing:0.38,
-    color: 'rgb(255,255,255)',
+    color: colors.white,
     opacity:0.96,
     fontWeight: '900',
   },
@@ -147,7 +145,7 @@ export default StyleSheet.create({
     fontSize: 13,
     lineHeight: 20,
     letterSpacing: 0.26,
-    color: 'rgb(255,255,255)',
+    color: colors.white,
     opacity: 0.96,
     fontWeight: '500',
   },
@@ -155,7 +153,7 @@ export default StyleSheet.create({
     width: metrics.screenWidth * .893,//335
     height: metrics.screenHeight * 0.2338,//156
     borderRadius: 10,
-    backgroundColor: 'rgb(255,255,255)',
+    backgroundColor: colors.white,
     marginTop: metrics.screenHeight * 0.0299,//20
     padding: metrics.screenWidth * 0.0533,//20
     flexDirection:'row'
@@ -165,7 +163,7 @@ export default StyleSheet.create({
     alignSelf: 'center',
     fontSize: 17,
     letterSpacing: 0.2,
-    color: 'rgb(41,48,74)',
+    color: colors.blueBgTheme,
     fontWeight: '900',
   },
   ForestSecondText: {
@@ -173,7 +171,7 @@ export default StyleSheet.create({
     alignSelf: 'center',
     fontSize: 25,
     letterSpacing: 0.3,
-    color: 'rgb(125,198,129)',
+    color: colors.greenbtnTheme,
     fontWeight: '900',
     marginTop: metrics.screenHeight * 0.0074,//5
   },
@@ -182,7 +180,7 @@ export default StyleSheet.create({
     alignSelf: 'center',
     fontSize: 25,
     letterSpacing: 0.3,
-    color: 'rgb(41,48,74)',
+    color: colors.blueBgTheme,
     fontWeight: '900',
     marginTop: metrics.screenHeight * 0.0074,//5
     marginLeft:metrics.screenWidth * .01333//5
@@ -196,7 +194,7 @@ export default StyleSheet.create({
 alignSelf:'center'
   },
   introButton3View: {
-    backgroundColor: 'rgb(125,198,129)',
+    backgroundColor: colors.greenbtnTheme,
     width: metrics.screenWidth * 0.288,//108
     height: metrics.screenHeight * 0.0599,//40
     alignSelf: 'center',
@@ -213,7 +211,7 @@ alignSelf:'center'
   introButton3Text: {
     textAlign: 'center',
     fontSize: 13,
-    color: 'rgb(255,255,255)',
+    color: colors.white,
     alignSelf: 'center',
     fontWeight: "900"
   },

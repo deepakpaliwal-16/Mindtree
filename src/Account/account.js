@@ -114,8 +114,6 @@ export default class AccountScreen extends Component {
                 this.flatListApiDataShow
               }
               horizontal={true}
-              // refreshing={this.state.refreshing}
-              // numColumns={1}
               keyExtractor={item => item.email}
             />
             <Text style={styles.GrowthText2}>Tree planted every 7-day streak</Text>

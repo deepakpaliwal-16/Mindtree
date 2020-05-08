@@ -1,14 +1,15 @@
 import metrics from '../themes/metrics'
 import { StyleSheet, Dimensions, } from 'react-native'
+import colors from '../themes/colors'
 export default StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'rgb(41, 48, 74)'
+    backgroundColor: colors.blueBgTheme
   },
   containerView: {
     width: metrics.screenWidth,
     height: metrics.screenHeight * 0.1799,
-    backgroundColor: 'rgb(41, 48, 74)',
+    backgroundColor: colors.blueBgTheme,
     marginTop: metrics.screenHeight * 0.074,
   },
   ImageBackgroundView: {
@@ -26,7 +27,7 @@ export default StyleSheet.create({
     alignSelf: 'center',
     fontSize: 17,
     letterSpacing: 0.2,
-    color: 'rgb(202,204,210)',
+    color: colors.whitishgrey,
     fontWeight: '900',
     marginTop: - metrics.screenHeight * 0.025,//16.67
   },
@@ -35,14 +36,14 @@ export default StyleSheet.create({
     alignSelf: 'center',
     fontSize: 27,
     letterSpacing: 0.32,
-    color: 'rgb(255,255,255)',
+    color: colors.white,
     fontWeight: '900'
   },
   containerModalView: {
     width: metrics.screenWidth,
     height: metrics.screenHeight * 0.659,
-    color: 'rgb(255,255,255)',
-    backgroundColor: 'rgb(255,255,255)',
+    color: colors.white,
+    backgroundColor: colors.white,
     borderTopLeftRadius: 40,
     borderTopRightRadius: 40,
     paddingHorizontal: metrics.screenWidth * 0.05333,
@@ -72,21 +73,21 @@ export default StyleSheet.create({
     alignSelf: 'flex-start',
     fontSize: 13,
     letterSpacing: 0.16,
-    color: 'rgb(41,48,74)',
+    color: colors.blueBgTheme,
     fontWeight: '700',
   },
  SecondModalDayText: {
     alignSelf: 'flex-start',
     fontSize: 13,
     letterSpacing: 0.16,
-    color: 'rgb(255,255,255)',
+    color: colors.white,
     fontWeight: '700',
   },
   FirstModalDetailText: {
     alignSelf: 'flex-start',
     fontSize: 17,
     letterSpacing: 0.2,
-    color: 'rgb(41,48,74)',
+    color: colors.blueBgTheme,
     fontWeight: '900',
     marginTop: metrics.screenHeight * 0.0074,//5
   },
@@ -94,7 +95,7 @@ export default StyleSheet.create({
     alignSelf: 'flex-start',
     fontSize: 17,
     letterSpacing: 0.2,
-    color: 'rgb(255,255,255)',
+    color: colors.white,
     fontWeight: '900',
     marginTop: metrics.screenHeight * 0.0074,//5
   },
@@ -116,7 +117,7 @@ export default StyleSheet.create({
     fontSize: 20,
     letterSpacing: 0.4,
     opacity:0.96,
-    color: 'rgb(255,255,255)',
+    color: colors.white,
     fontWeight: '900',
   },
 });
